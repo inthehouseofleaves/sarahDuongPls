@@ -1,0 +1,36 @@
+main {
+
+* {
+    border: red solid 1px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+section:nth-child(2n+0){
+    background-color: palegoldenrod;
+}
+
+.question {
+    display: flex;
+}
+
+    .qna {
+        width: 70%;
+    }
+
+    .image {
+        display: flex;
+        width: 30%;
+    }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+}
+
