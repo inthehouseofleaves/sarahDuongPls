@@ -2,6 +2,7 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "media";
 
 
 // font-family: 'Amatic SC', cursive;
@@ -9,15 +10,15 @@
 // font-family: 'Architects Daughter', cursive;
 // font-family: 'Permanent Marker', cursive;
 
+
+body {
+    background-color: #00958B;
+}
+
 html {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 62.5%;
-};
-
-// HEADERS AND FONT
-
-header {
-    height: 100vh;
+    color: #FFFBBC;
 }
 
 h1,
@@ -43,10 +44,10 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
-    font-weight: lighter;
-    padding: 15px;
-    margin: 0;
+        font-size: 2rem;
+        font-weight: lighter;
+        padding: 15px;
+        margin: 0;
 }
 
 label {
@@ -61,5 +62,5 @@ p {
 .wrapper {
     margin: 0 auto;
     max-width: 1080px;
-    width: 90%;
+    width: 75%;
 }

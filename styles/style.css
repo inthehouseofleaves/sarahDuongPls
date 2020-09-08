@@ -236,24 +236,21 @@ html {
 }
 
 header {
-  background-color: palegoldenrod;
+  background-color: #FFFBBC;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
   text-align: center;
+  color: #004641;
+  height: 100vh;
 }
 
 header img {
   width: 150px;
   margin: 20px;
-}
-
-main * {
-  border: red solid 1px;
 }
 
 main section {
@@ -263,14 +260,28 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 main section:nth-child(2n+0) {
-  background-color: palegoldenrod;
+  background-color: #FFFBBC;
+  color: #00625C;
 }
 
 main .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .qni {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,19 +303,84 @@ main img {
   width: 100%;
 }
 
+main .submitForm {
+  margin: 30px;
+  height: auto;
+}
+
+main button {
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-transform: uppercase;
+}
+
+main button:hover {
+  background: darkgrey;
+}
+
+main .results {
+  background-color: #FFFBBC;
+}
+
+main .resultsWrapper {
+  width: 50%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
 footer {
-  background-color: darkgray;
+  background-color: black;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 878px) {
+  body h1 {
+    font-size: 6.3rem;
+  }
+  body h2 {
+    font-size: 2.5rem;
+  }
+  body h3 {
+    font-size: 5.8rem;
+  }
+  body label {
+    font-size: 3rem;
+  }
+  body .qna {
+    width: 100%;
+  }
+  body .image {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 6rem;
+  }
+  body h2 {
+    font-size: 2rem;
+  }
+  body h3 {
+    font-size: 5rem;
+  }
+  body label {
+    font-size: 2.5rem;
+  }
+}
+
+body {
+  background-color: #00958B;
 }
 
 html {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 62.5%;
-}
-
-header {
-  height: 100vh;
+  color: #FFFBBC;
 }
 
 h1,
@@ -348,5 +424,5 @@ p {
 .wrapper {
   margin: 0 auto;
   max-width: 1080px;
-  width: 90%;
+  width: 75%;
 }

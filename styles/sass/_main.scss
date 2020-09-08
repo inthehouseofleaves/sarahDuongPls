@@ -1,35 +1,66 @@
 main {
 
-* {
-    border: red solid 1px;
-}
-
 section {
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 section:nth-child(2n+0){
-    background-color: palegoldenrod;
+    background-color: #FFFBBC;
+    color: #00625C;
 }
 
-.question {
-    display: flex;
-}
-
-    .qna {
-        width: 70%;
-    }
-
-    .image {
+    .question {
         display: flex;
-        width: 30%;
+        flex-direction: column;
+        align-items: center;
     }
 
-        img {
-            height: auto;
-            width: 100%;
+        .qni {
+            display: flex;
+        }
+
+        .qna {
+            width: 70%;
+        }
+
+        .image {
+            display: flex;
+            width: 30%;
+        }
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+    .submitForm {
+        margin: 30px;
+        height: auto;
+    }
+
+        button {
+            background: lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 2rem;
+            font-family: 'Gloria Hallelujah', cursive;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: darkgrey;
+        }
+
+    .results {
+        background-color: #FFFBBC;
+    }
+
+        .resultsWrapper {
+            width: 50%;
+            margin: 0 auto;
+            max-width: 1080px;
         }
 
 }
