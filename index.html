@@ -29,142 +29,137 @@
 
     <main>
 
-        <!-- QUESTION 1 -->
-
-        <section class="questionOne">
-            <div class="wrapper">
-                <form action="" class="question" id="fOne">
-                    <div class="qni">
-                        <!-- QNA -->
-                        <div class="qna">
-                            <h3>1. Choose your Toronto fighter:</h3>
-                            <div class="answers">
-                                <!-- ANSWER 1A -->
-                                <!-- Label corresponds to the ID -->
-                                <div class="answer">
-                                    <input type="radio" name="fOne" id="fiddleLeaf1" value="">
-                                    <label for="fiddleLeaf1">a) Jordan Peterson</label>
-                                </div>
-                                <!-- ANSWER 1B -->
-                                <div class="answer">
-                                    <input type="radio" name="fOne" id="pothos1" value="">
-                                    <label for="pothos1">b) Chair Girl<label>
-                                </div>
-                                <!-- ANSWER 1C -->
-                                <div class="answer">
-                                    <input type="radio" name="fOne" id="marijuana1" value="">
-                                    <label for="marijuana1">c) Debby</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- IMAGE 1 -->
-                        <div class="image">
-                            <img src="./styles/assets/drake.png" alt="">
-                        </div>  
-                    </div>
-                    <!-- SUBMIT BUTTON -->
-                    <div class="submitForm">
-                        <button type="submit" value="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <!-- QUESTION  -->
-        
-        <section class="questionTwo">
-            <div class="wrapper">
-                <form action="" class="question" id="fTwo">
-                    <!-- QNI -->
-                    <div class="qni">
-                        <!-- QNA -->
-                        <div class="qna">
-                            <h3>2. Pick a suuuuuuper basic quote.</h3>
-                            <!-- ANSWERS -->
-                            <div class="answers">
-                                <!-- ANSWER 2A -->
-                                <!-- Label corresponds to the ID -->
-                                <div class="answer">
-                                    <input type="radio" name="fTwo" id="pothos2" value="">
-                                    <label for="pothos2">a) Carpe diem</label>
-                                </div>
-                                <!-- ANSWER 2B -->
-                                <!-- Label corresponds to the ID -->
-                                <div class="answer">
-                                    <input type="radio" name="fTwo" id="fiddleLeaf2" value="">
-                                    <label for="fiddleLeaf2">b) Live, laugh, love</label>
-                                </div>
-                                <!-- ANSWER 2C -->
-                                <div class="answer">
-                                    <input type="radio" name="fTwo" id="marijuana2" value="">
-                                    <label for="marijuana2">c) Real eyes realize real lies</label>
+        <!-- QUIZ CONTAINER -->
+        <div class="wholeAssQuiz" id="quizHere">
+            <!-- QUESTION 1 -->
+            <section class="questionOne">
+                <div class="wrapper">
+                    <form action="" class="question" id="fOne">
+                        <div class="qni">
+                            <!-- QNA -->
+                            <div class="qna">
+                                <h3>1. Choose your Toronto fighter:</h3>
+                                <div class="answers">
+                                    <!-- ANSWER 1A -->
+                                    <!-- Label corresponds to the ID -->
+                                    <div class="answer">
+                                        <input type="radio" name="q1" data-subgenre="fiddleLeaf" id="fiddleLeaf1" value="a">
+                                        <label for="fiddleLeaf1">a) Jordan Peterson</label>
+                                    </div>
+                                    <!-- ANSWER 1B -->
+                                    <div class="answer">
+                                        <input type="radio" name="q1" data-subgenre="pothos" id="pothos1" value="b">
+                                        <label for="pothos1">b) Chair Girl<label>
+                                    </div>
+                                    <!-- ANSWER 1C -->
+                                    <div class="answer">
+                                        <input type="radio" name="q1" data-subgenre="pothos" id="marijuana1" value="c">
+                                        <label for="marijuana1">c) Debby</label>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- IMAGE 1 -->
+                            <div class="image">
+                                <img src="./styles/assets/drake.png" alt="">
+                            </div>  
                         </div>
-                        <!-- IMAGE -->
-                        <div class="image">
-                            <img src="./styles/assets/quote.png" alt="">
-                        </div>
-                    </div>
-                    <!-- SUBMIT BUTTON -->
-                    <div class="submitForm">
-                        <button type="submit" value="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+                    </form>
+                </div>
+            </section>
 
-
-        <!-- QUESTION 3 -->
-
-        <section class="questionThree">
-            <div class="wrapper">
-                <form action="" class="question" id="fThree">
-                    <div class="qni">
-                        <!-- QNA -->
-                        <div class="qna">
-                            <h3>3. Your ting wants to go for a date. Where ya headed?</h3>
-                            <!-- ANSWERS -->
-                            <div class="answers">
-                                <!-- ANSWER 3A -->
-                                <!-- Label corresponds to the ID -->
-                                <div class="answer">
-                                    <input type="radio" name="fThree" id="marijuana3" value="">
-                                    <label for="marijuana3">a) Social distance circles at Trinity Bellwoods</label>
-                                </div>
-                                <!-- ANSWER 3B -->
-                                <div class="answer">
-                                    <input type="radio" name="fThree" id="pothos3" value="">
-                                    <label for="pothos3">b) The capybara enclosure at High Park</label>
-                                </div>
-                                <!-- ANSWER 3C -->
-                                <div class="answer">
-                                    <input type="radio" name="fThree" id="fiddleLeaf3" value="">
-                                    <label for="fiddleLeasf3">c) Yorkdale Mall </label>
+            <!-- QUESTION  -->
+            
+            <section class="questionTwo">
+                <div class="wrapper">
+                    <form action="" class="question" id="fTwo">
+                        <!-- QNI -->
+                        <div class="qni">
+                            <!-- QNA -->
+                            <div class="qna">
+                                <h3>2. Pick a suuuuuuper basic quote.</h3>
+                                <!-- ANSWERS -->
+                                <div class="answers">
+                                    <!-- ANSWER 2A -->
+                                    <!-- Label corresponds to the ID -->
+                                    <div class="answer">
+                                        <input type="radio" name="q2" data-subgenre="pothos" id="pothos2" value="a">
+                                        <label for="pothos2">a) Carpe diem</label>
+                                    </div>
+                                    <!-- ANSWER 2B -->
+                                    <!-- Label corresponds to the ID -->
+                                    <div class="answer">
+                                        <input type="radio" name="q2" data-subgenre="fiddleLeaf" id="fiddleLeaf2" value="b">
+                                        <label for="fiddleLeaf2">b) Live, laugh, love</label>
+                                    </div>
+                                    <!-- ANSWER 2C -->
+                                    <div class="answer">
+                                        <input type="radio" name="q2" data-subgenre="marijuana" id="marijuana2" value="c">
+                                        <label for="marijuana2">c) Real eyes realize real lies</label>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- IMAGE -->
+                            <div class="image">
+                                <img src="./styles/assets/quote.png" alt="">
+                            </div>
                         </div>
-                        <!-- IMAGE 3 -->
-                        <div class="image">
-                            <img src="./styles/assets/capybara2.png" alt="">
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- QUESTION 3 -->
+
+            <section class="questionThree">
+                <div class="wrapper">
+                    <form action="" class="question" id="fThree">
+                        <div class="qni">
+                            <!-- QNA -->
+                            <div class="qna">
+                                <h3>3. Your ting wants to go for a date. Where ya headed?</h3>
+                                <!-- ANSWERS -->
+                                <div class="answers">
+                                    <!-- ANSWER 3A -->
+                                    <!-- Label corresponds to the ID -->
+                                    <div class="answer">
+                                        <input type="radio" name="q3" data-subgenre="marijuana" id="marijuana3" value="a">
+                                        <label for="marijuana3">a) Social distance circles at Trinity Bellwoods</label>
+                                    </div>
+                                    <!-- ANSWER 3B -->
+                                    <div class="answer">
+                                        <input type="radio" name="q3" data-subgenre="pothos" id="pothos3" value="b">
+                                        <label for="pothos3">b) The capybara enclosure at High Park</label>
+                                    </div>
+                                    <!-- ANSWER 3C -->
+                                    <div class="answer">
+                                        <input type="radio" name="q3" data-subgenre="fiddleLeaf" id="fiddleLeaf3" value="c">
+                                        <label for="fiddleLeaf3">c) Yorkdale Mall </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IMAGE 3 -->
+                            <div class="image">
+                                <img src="./styles/assets/sloth.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <!-- SUBMIT BUTTON -->
-                    <div class="submitForm">
-                        <button type="submit" value="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+                        <!-- SUBMIT BUTTON -->
+                        <div class="submitForm">
+                            <button type="submit" value="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div> <!-- end of quiz container -->
 
         <!-- DISPLAY RESULTS HERE -->
 
-        <section class="results">
+        <section class="results" id="resultsHere">
             <div class="resultsWrapper">
             </div>
         </section>
 
     </main>
+
 
     <!-- FOOTER -->
 

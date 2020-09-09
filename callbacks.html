@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Functions</title>
+</head>
+<body>
+
+    <script>
+
+        // 1. Define a function that takes one parameter
+        // b) (cakeIsDone) is TBD; we don't know it yet! Pass it in here!
+        function makeACake(cakeIsDone){
+            console.log("Mix the ingredients")
+            console.log("Pour batter in the pan")
+            console.log("Put cake in oven")
+            console.log("Take cake out, cake is done")
+
+            // a) This "cakeIsDone" parameter is included, although we don't know what it does yet
+            // When we call makeACake, we will call all of those console.logs, until we get to cakeIsDone
+            // cakeIsDone will get called, but we must define what it is!
+            cakeIsDone(); 
+        }
+
+        // 2. Here are the instructions for your TBD parameters! (ie. deliverCake)
+            // On this line, deliverCake is getting put inside of cakeIsDone parameter
+            // We call cakeIsDone by defining makeACake()!
+            makeACake(() => {
+                deliverCake("155 Churchill Cres")
+            });
+
+        // 3. DELIVER CAKE is defined here!
+        function deliverCake(deliveryAddress){
+            console.log(`Deliver the cake to ${deliveryAddress}`)
+        };
+
+        
+
+
+    </script>
+    
+</body>
+</html>

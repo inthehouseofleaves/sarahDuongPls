@@ -4,6 +4,18 @@
 
     body {
 
+        img {
+            height: 40vh;
+            width: auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0 0 20px 0;
+        }
+
         h1 {
             font-size: 6.3rem;
         }
@@ -13,11 +25,11 @@
         }
 
         h3 {
-            font-size: 5.8rem;
+            font-size: 5rem;
         }
 
         label {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         
         .qna {
