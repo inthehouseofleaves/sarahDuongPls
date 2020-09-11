@@ -315,7 +315,6 @@ main button {
   font-size: 2rem;
   font-family: 'Gloria Hallelujah', cursive;
   text-transform: uppercase;
-  margin-top: 15vh;
 }
 
 main button:hover:focus:active {
@@ -457,6 +456,7 @@ label {
 
 p {
   font-size: 3rem;
+  color: black;
 }
 
 .wrapper {
