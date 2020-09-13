@@ -53,15 +53,31 @@ main {
                 background: darkgrey;
             }
 
-        .results {
+        .results, .explanation {
+            display: flex;
+            height: auto;
             background-color: #FFFBBC;
+            flex-direction: column;
         }
 
             .resultsWrapper {
-                width: 50%;
                 margin: 0 auto;
                 max-width: 1080px;
+                width: 80%;
             }
+
+                .explanation p {
+                    margin-bottom: 100px;
+                    font-size: 3rem;
+                    color: black;
+                    text-align: justify;
+                    font-family: 'Amatic SC', cursive;
+                }
+
+                // * {
+                //     border: 1px slateblue solid;
+                // }
+
 
 }
 

@@ -48,24 +48,50 @@ $(document).ready(function(){
             answerThree = $("input[name=q3]:checked").val(),
         ]
 
+        // 6. EXPLANATIONS
+
+        const explanations = {
+            pothos: "you a bad bitch pothos",
+            marijuana: "smoke dope",
+            fiddleleaf: "basic ass hoe",
+        }
+
+
         // 8. IF STATEMENT/DISPLAY ON PAGE
+        
+        const displayAnswer = function() {
 
-        if (answers[0] === answers[1]){
-            $(".results").html(`<h4>You are a: ${answers[0]}</h4>`);
-        } else if (answers[1] === answers[2]){
-            $(".results").html(`<h4>You are a: ${answers[1]}</h4>`);
-        } else if (answers[0] === answers[2]){
-            $(".results").html(`<h4>You are a: ${answers[2]}</h4>`);
-        } else {
-            $(".results").html(`<h4>You are a ${answers[Math.floor(Math.random() * answers.length)]}`)
+            // DISPLAY RESULTS
+
+            if (answers[0] === answers[1]){
+                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[0]}.</h4></div>`);
+            } else if (answers[1] === answers[2]){
+                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[1]}</h4></div>`);
+            } else if (answers[0] === answers[2]){
+                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[2]}</h4></div>`);
+            } else {
+                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[Math.floor(Math.random() * answers.length)]}</h4></div>`)
+            }
+
+            // DISPLAY EXPLANATIONS
+
+            if ($(".results").html().includes("pothos")) {
+                $(".explanation").html(`<p>You are a ${explanations.pothos}</p>`)
+                alert(explanations.pothos)
+            } else if ($(".results").html().includes("marijuana")) {
+                $(".explanation").html(`<p>You are a ${explanations.marijuana}</p>`)
+                alert(explanations.marijuana)
+            } else if ($(".results").html().includes("fiddleleaf")) {
+                $(".explanation").html(`<p>You are a ${explanations.fiddleleaf}</p>`)
+                alert(explanations.fiddleleaf)
+            }
+
         }
 
-        // 9. MORE IF STATEMENTS
+        // CALL FUNCTION
 
-        if (answers === "pothos"){
-            $(".results").html(`<p>What in tarnation is happening?</p>`)
-            console.log("pothos bitch")
-        }
+        displayAnswer()
+
 
     }) // end of form
 

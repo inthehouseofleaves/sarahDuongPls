@@ -321,14 +321,30 @@ main button:hover:focus:active {
   background: darkgrey;
 }
 
-main .results {
+main .results, main .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
   background-color: #FFFBBC;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .resultsWrapper {
-  width: 50%;
   margin: 0 auto;
   max-width: 1080px;
+  width: 80%;
+}
+
+main .explanation p {
+  margin-bottom: 100px;
+  font-size: 3rem;
+  color: black;
+  text-align: justify;
+  font-family: 'Amatic SC', cursive;
 }
 
 .results {
@@ -439,7 +455,12 @@ h3 {
 h4 {
   font-family: 'Amatic SC', cursive;
   font-size: 8rem;
+  margin: 10px;
   color: red;
+  text-align: center;
+  height: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 h5 {
