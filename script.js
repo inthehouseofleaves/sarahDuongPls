@@ -1,25 +1,3 @@
-// BEFORE ANYTHING: CREATE YOUR RESPONSES???
-
-const quizQuestions = [
-    q1 = {
-        question: "1. Choose your Toronto fighter:",
-        a: "fiddleleaf fig",
-        b: "pothos",
-        c: "marijuana",
-    },
-    q2 = {
-        question: "2. Pick a suuuuuuper basic quote.",
-        a: "pothos",
-        b: "fiddleleaf fig",
-        c: "marijuana",
-    },
-    q3 = {
-        question: "3. Your ting wants to go for a date. Where ya headed?",
-        a: "marijuana",
-        b: "pothos",
-        c: "fiddleleaf fig",
-    }
-];
 
 // PSEUDOCODE
 
@@ -47,16 +25,16 @@ $(document).ready(function(){
             answerTwo = $("input[name=q2]:checked").val(),
             answerThree = $("input[name=q3]:checked").val(),
         ]
-
+                
         // 6. EXPLANATIONS
 
         const explanations = {
 
-            pothos: "Whether at the zoo, in a park, or heck - on a balcony overlooking the Gardiner - you have an affinity for the outdoors. You're adventurous and fun to be around, I don't know what else to say except how much am I supposed to fucking water you? Why are you both dead and alive? Why are you are the bane of my existence?",
+            pothos: "Whether at the zoo, in a park, or on a balcony overlooking the Gardiner, you have an affinity for the outdoors. You're adventurous, yada yada yada, I don't know what else to say except how much am I supposed to water you? Why are you both dead and alive? This isn't Shrodinger's Cat. Someone explain this to me!",
 
-            marijuana: "You're super chill and have a great sense of humor. You prefer to live life day-by-day and don't like taking things too seriously. Except for re-potting. You hate re-potting. You'll wither away and die even though I've put all of my love and effort into your existence. Fuck you. I hate you.",
+            marijuana: "You're super chill and have a great sense of humor, and you don't take things too seriously. Except for re-potting. You hate re-potting. You'll wither away and die even though I've put all of my love and effort into your existence. Fuck you. I hate you.",
 
-            fiddleleaf: "You're basic as fuck, what can I say? Yorkdale Mall? Seriously? I'd rather spend the night watching that terrible new Charlie Kaufman movie and gouging my own eyes out.",
+            fiddleleaf: "You're basic as fuck, what can I say? Yorkdale Mall? Seriously? I'd rather spend the night watching that horrendous new Charlie Kaufman movie and gouging my own eyes out.",
 
         }
 
@@ -85,6 +63,8 @@ $(document).ready(function(){
                 $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.marijuana}</p></div>`)
             } else if ($(".results").html().includes("fiddleleaf fig")) {
                 $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.fiddleleaf}</p></div>`)
+            } else {
+                alert("In a rush, are we? Choose an answer for every question and you can be on your way!")
             }
 
         }
@@ -93,7 +73,6 @@ $(document).ready(function(){
 
         displayAnswer()
 
+    })
 
-    }) // end of form
-
-}) // end of document ready
+})
