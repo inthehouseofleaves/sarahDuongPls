@@ -392,7 +392,7 @@ footer {
   }
   body .resultsWrapper,
   body .wrapper {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -410,10 +410,6 @@ footer {
   }
   body p {
     font-size: 3rem;
-  }
-  body .resultsWrapper,
-  body .wrapper {
-    width: 80%;
   }
 }
 
