@@ -4,11 +4,6 @@
 
     body {
 
-        img {
-            height: 40vh;
-            width: auto;
-        }
-
         h1,
         h2,
         h3,
@@ -28,6 +23,20 @@
             font-size: 5rem;
         }
 
+        h4 {
+            margin: 10vh;
+            font-size: 6rem;
+        }
+
+        .image {
+            display: none;
+        }
+
+        img {
+            height: 40vh;
+            width: auto;
+        }
+
         label {
             font-size: 2.5rem;
         }
@@ -36,8 +45,9 @@
             width: 100%;
         }
 
-        .image {
-            display: none;
+        .resultsWrapper,
+        .wrapper {
+            width: 70%;
         }
 
     }
@@ -50,20 +60,30 @@
 
     body {
 
-        h1 {
-            font-size: 6rem;
+        h1,
+        h3 {
+            font-size: 4.5rem;
         }
 
         h2 {
             font-size: 2rem;
         }
 
-        h3 {
+        h4 {
             font-size: 5rem;
         }
 
         label {
             font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+
+        .resultsWrapper,
+        .wrapper {
+            width: 80%;
         }
         
     }

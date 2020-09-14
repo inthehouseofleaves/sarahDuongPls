@@ -51,9 +51,13 @@ $(document).ready(function(){
         // 6. EXPLANATIONS
 
         const explanations = {
-            pothos: "you a bad bitch pothos",
-            marijuana: "smoke dope",
-            fiddleleaf: "basic ass hoe",
+
+            pothos: "Whether at the zoo, in a park, or heck - on a balcony overlooking the Gardiner - you have an affinity for the outdoors. You're adventurous and fun to be around, I don't know what else to say except how much am I supposed to fucking water you? Why are you both dead and alive? Why are you are the bane of my existence?",
+
+            marijuana: "You're super chill and have a great sense of humor. You prefer to live life day-by-day and don't like taking things too seriously. Except for re-potting. You hate re-potting. You'll wither away and die even though I've put all of my love and effort into your existence. Fuck you. I hate you.",
+
+            fiddleleaf: "You're basic as fuck, what can I say? Yorkdale Mall? Seriously? I'd rather spend the night watching that terrible new Charlie Kaufman movie and gouging my own eyes out.",
+
         }
 
 
@@ -64,11 +68,11 @@ $(document).ready(function(){
             // DISPLAY RESULTS
 
             if (answers[0] === answers[1]){
-                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[0]}.</h4></div>`);
+                $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[0]}.</h4></div>`);
             } else if (answers[1] === answers[2]){
-                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[1]}</h4></div>`);
+                $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[1]}</h4></div>`);
             } else if (answers[0] === answers[2]){
-                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[2]}</h4></div>`);
+                $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[2]}</h4></div>`);
             } else {
                 $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[Math.floor(Math.random() * answers.length)]}</h4></div>`)
             }
@@ -76,14 +80,11 @@ $(document).ready(function(){
             // DISPLAY EXPLANATIONS
 
             if ($(".results").html().includes("pothos")) {
-                $(".explanation").html(`<p>You are a ${explanations.pothos}</p>`)
-                alert(explanations.pothos)
+                $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.pothos}</p><div>`)
             } else if ($(".results").html().includes("marijuana")) {
-                $(".explanation").html(`<p>You are a ${explanations.marijuana}</p>`)
-                alert(explanations.marijuana)
-            } else if ($(".results").html().includes("fiddleleaf")) {
-                $(".explanation").html(`<p>You are a ${explanations.fiddleleaf}</p>`)
-                alert(explanations.fiddleleaf)
+                $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.marijuana}</p></div>`)
+            } else if ($(".results").html().includes("fiddleleaf fig")) {
+                $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.fiddleleaf}</p></div>`)
             }
 
         }

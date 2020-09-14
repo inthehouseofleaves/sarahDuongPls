@@ -54,7 +54,7 @@ h3 {
 h4 {
     font-family: 'Amatic SC', cursive;
     font-size: 8rem;
-    margin: 10px;
+    margin: 10vh;
     color: red;
     text-align: center;
     height: auto;
@@ -74,8 +74,13 @@ label {
 }
 
 p {
-    font-size: 3rem;
+    font-size: 4rem;
     color: black;
+    margin-top: 0;
+    margin-bottom: 100px;
+    color: black;
+    text-align: justify;
+    font-family: 'Amatic SC', cursive;
 }
 
 .wrapper {
