@@ -49,7 +49,9 @@ main {
                 text-transform: uppercase;
             }
 
-            button:hover:focus:active {
+            button:active,
+            button:focus-within,
+            button:hover {
                 background: darkgrey;
             }
 

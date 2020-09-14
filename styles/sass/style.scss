@@ -8,8 +8,10 @@ a {
     color: white;
 }
 
+a:active,
+a:focus-within,
 a:hover {
-    color: yellow;
+    color: darkgrey;
 }
 
 body {

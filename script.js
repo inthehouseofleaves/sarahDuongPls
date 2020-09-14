@@ -18,7 +18,7 @@ $(document).ready(function(){
 
         event.preventDefault();
 
-        // 5. SAVE INFO FROM CHECKED RADIO BUTTONS INTO VARIABLES
+        // 3. SAVE INFO FROM CHECKED RADIO BUTTONS INTO VARIABLES
 
         const answers = [
             answerOne = $("input[name=q1]:checked").val(),
@@ -26,7 +26,7 @@ $(document).ready(function(){
             answerThree = $("input[name=q3]:checked").val(),
         ]
                 
-        // 6. EXPLANATIONS
+        // 4. EXPLANATIONS
 
         const explanations = {
 
@@ -38,12 +38,11 @@ $(document).ready(function(){
 
         }
 
-
-        // 8. IF STATEMENT/DISPLAY ON PAGE
+        // 5. IF STATEMENT/DISPLAY ON PAGE
         
         const displayAnswer = function() {
 
-            // DISPLAY RESULTS
+            // A) DISPLAY RESULTS
 
             if (answers[0] === answers[1]){
                 $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[0]}.</h4></div>`);
@@ -55,7 +54,7 @@ $(document).ready(function(){
                 $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[Math.floor(Math.random() * answers.length)]}</h4></div>`)
             }
 
-            // DISPLAY EXPLANATIONS
+            // B) DISPLAY EXPLANATIONS
 
             if ($(".results").html().includes("pothos")) {
                 $(".explanation").html(`<div class="resultsWrapper"><p>${explanations.pothos}</p><div>`)
@@ -69,7 +68,7 @@ $(document).ready(function(){
 
         }
 
-        // CALL FUNCTION
+        // 6. CALL FUNCTION
 
         displayAnswer()
 
