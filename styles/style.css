@@ -365,7 +365,7 @@ footer {
     margin: 0 0 20px 0;
   }
   body h1 {
-    font-size: 6.3rem;
+    font-size: 6.5rem;
   }
   body h2 {
     font-size: 2.5rem;
@@ -381,7 +381,7 @@ footer {
     display: none;
   }
   body img {
-    height: 40vh;
+    height: 35vh;
     width: auto;
   }
   body label {
@@ -401,14 +401,12 @@ footer {
   body h3 {
     font-size: 4.5rem;
   }
-  body h2 {
-    font-size: 2rem;
+  body h2,
+  body label {
+    font-size: 2.5rem;
   }
   body h4 {
     font-size: 5rem;
-  }
-  body label {
-    font-size: 2.5rem;
   }
   body p {
     font-size: 3rem;
