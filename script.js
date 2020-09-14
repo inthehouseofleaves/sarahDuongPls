@@ -51,7 +51,7 @@ $(document).ready(function(){
             } else if (answers[0] === answers[2]){
                 $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[2]}</h4></div>`);
             } else {
-                $(".results").html(`<div class="resultsWrapper"><h4>You are a ${answers[Math.floor(Math.random() * answers.length)]}</h4></div>`)
+                $(".results").html(`<div class="resultsWrapper"><h4>You're a ${answers[Math.floor(Math.random() * answers.length)]}</h4></div>`)
             }
 
             // B) DISPLAY EXPLANATIONS
